@@ -4,15 +4,15 @@
   flex-wrap: wrap;
   margin: 30px auto;
   width: 300px;
-  border: 5px solid black;
+  border: 2px solid black;
   list-style: none;
   padding-left: 0;
 }
 
 .ttt li {
-  width: 90px;
-  height: 90px;
-  border: 5px solid black;
+  width: 96px;
+  height: 96px;
+  border: 2px solid black;
   color: blue;
 
   cursor: pointer;
@@ -30,8 +30,13 @@ li:hover {
   font-size: 70px;
 }
 
+h1 {
+  color: blue;
+}
+
 body {
   background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000");
   background-size: cover;
   background-repeat: no-repeat;
+  font-family: fantasy;
 }

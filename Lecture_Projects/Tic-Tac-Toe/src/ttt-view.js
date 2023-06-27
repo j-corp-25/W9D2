@@ -8,8 +8,6 @@ class View {
   }
 
   setupBoard() {
-
-
     const ul = document.createElement('ul');
 
     for (let i = 0; i < 3; i++) {
@@ -31,10 +29,10 @@ class View {
 
     const pos = JSON.parse(target.dataset.pos)
 
+    const currentPlayer = this.game.currentPlayer
 
     this.game.playMove(pos)
 
-    const currentPlayer = this.game.currentPlayer
 
     target.innerText = currentPlayer
 
@@ -45,17 +43,20 @@ class View {
 
 
 
-
-
-
-
-
+    if (this.game.isOver()) {
+      this.handleGameOver();
+    }
   }
 
   makeMove(square) {
   }
 
   handleGameOver() {
+    if (this.game.winner()) {
+      alert(`${this.game.winner()} won!`)
+    } else {
+      alert('NO ONE WINS!');
+    }
   }
 }
 
