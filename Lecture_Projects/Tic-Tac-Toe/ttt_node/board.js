@@ -9,7 +9,7 @@ class Board {
     if (!Board.isValidPos(pos)) {
       throw new MoveError('Is not valid position!');
     }
-
+  
     return (this.grid[pos[0]][pos[1]] === null);
   }
 

@@ -13,10 +13,25 @@
   width: 90px;
   height: 90px;
   border: 5px solid black;
-  background: gray;
+  color: blue;
+
   cursor: pointer;
 }
 
 li:hover {
   background: yellow;
+}
+
+.ttt li.open {
+  display: flex;
+  font-family: fantasy;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+
+body {
+  background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
